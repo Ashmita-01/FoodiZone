@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff8f32"
+    tools:context=".activity.LoginActivity">
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo_white_one" />
+
+    <EditText
+        android:id="@+id/et_mob_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_logo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edittext_outline"
+        android:drawableStart="@drawable/ic_phone"
+        android:drawablePadding="10dp"
+        android:elevation="6dp"
+        android:fontFamily="@font/adamina"
+        android:hint="@string/mobile_number_10_digits"
+        android:inputType="number"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:paddingStart="10dp"
+        android:textColorHint="#7F000000"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/et_pass_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_mob_login"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/adamina"
+        android:hint="@string/password"
+        android:maxLines="1"
+        android:inputType="textPassword"
+        android:elevation="6dp"
+        android:textColorHint="#7F000000"
+        android:textSize="15dp"
+        android:drawableStart="@drawable/ic_lock_black_24dp"
+        android:drawablePadding="10dp"
+        android:paddingStart="10dp"
+        android:background="@drawable/edittext_outline"/>
+
+    <Button
+        android:id="@+id/button_go"
+        android:layout_width="49dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_pass_login"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/button_round"
+        android:drawableStart="@drawable/ic_arrow_forward_black_24dp"
+        android:drawablePadding="20dp"
+        android:elevation="25dp" />
+
+    <TextView
+        android:id="@+id/tv_forgetPass_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_pass_login"
+        android:text="@string/forgot_password"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/adamina"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txt_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/don_t_have_an_account_sign_up"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/adamina"
+        android:textSize="15sp" />
+
+</RelativeLayout>

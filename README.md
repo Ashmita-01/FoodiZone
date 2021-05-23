@@ -1,2 +1,3 @@
 # FoodiZone
- A food order application
+ It is a food order application where one can order food from their favourite restaurant.
+ 
